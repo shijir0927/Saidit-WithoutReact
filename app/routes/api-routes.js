@@ -1,0 +1,38 @@
+// *********************************************************************************
+// api-routes.js - this file offers a set of routes for displaying and saving data to the db
+// *********************************************************************************
+
+// Dependencies
+const connection = require("../config/connection.js");
+
+// Routes
+module.exports = function(app) {
+  // Get all questions
+  app.get("/api/all", function(req, res) {
+    const dbQuery = "SELECT * FROM questions_data";
+
+    connection.query(dbQuery, function(err, result) {
+      if (err) throw err;
+      res.json(result);
+    });
+  });
+
+  // Add a question
+  app.post("/api/new", function(req, res) {
+    console.log("Question Data:");
+    console.log(req.body);
+
+    var dbQuery =
+      "INSERT INTO questions_data (name, topic, question, created_at) VALUES (?,?,?,?)";
+
+    connection.query(
+      dbQuery,
+      [req.body.name, req.body.topic, req.body.question, req.body.created_at],
+      function(err, result) {
+        if (err) throw err;
+        console.log("Question Successfully Saved!");
+        res.end();
+      }
+    );
+  });
+};
