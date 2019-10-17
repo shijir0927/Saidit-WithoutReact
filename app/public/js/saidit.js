@@ -3,13 +3,13 @@
 // When the page loads, grab and display all of our questions
 $.get("/api/all", function(data) {
   if (data.length !== 0) {
-    for (const i = 0; i < data.length; i++) {
+    for (let i = 0; i < data.length; i++) {
       const row = $("<div>");
       row.addClass("question");
 
       row.append("<p>" + data[i].name + "</p>");
       row.append("<p>" + data[i].topic + "</p>");
-      row.append("<p>" + data[i].question + "</p>");
+      row.append("<p>" + data[i].question + "abc" + "</p>");
       row.append(
         "<p>At " + moment(data[i].created_at).format("h:mma on dddd") + "</p>"
       );
@@ -32,7 +32,9 @@ $("#submit-question").on("click", function(event) {
     question: $("#question")
       .val()
       .trim(),
-    created_at: moment().format("YYYY-MM-DD HH:mm:ss")
+    created_at: moment().format("YYYY-MM-DD HH:mm:ss"),
+    like: 0,
+    dislike: 0
   };
 
   console.log(newQuestion);

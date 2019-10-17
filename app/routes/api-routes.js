@@ -21,7 +21,7 @@ module.exports = function(app) {
   app.post("/api/new", function(req, res) {
     console.log("Question Data:");
     console.log(req.body);
-
+    console.log(req.body.like);
     var dbQuery =
       "INSERT INTO questions_data (name, topic, question, created_at) VALUES (?,?,?,?)";
 
