@@ -1,72 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../public/css/homepage.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/homepage.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Saidit</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-        <div class="w3-bar w3-white w3-card" id="myNavbar">
-            <a href="#home" class="w3-bar-item w3-button w3-wide">Saidit</a>
-            <!-- Right-sided navbar links -->
-            <div class="w3-right w3-hide-small">
-                <a href="index.html" class="w3-bar-item w3-button">NEW POSTS</a>
-                <a href="#trending" class="w3-bar-item w3-button">TRENDING</a>
-                <a href="#login" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
-                <a href="#signup" class="w3-bar-item w3-button">SIGNUP</a>
-                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-            </div>
-            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
-                onclick="w3_open()">
-                <i class="fa fa-bars"></i>
-            </a>
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-wide">Saidit</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button">NEW POSTS</a>
+          <a href="#trending" class="w3-bar-item w3-button">TRENDING</a>
+          <a href="#login" class="w3-bar-item w3-button"
+            ><i class="fa fa-user"></i>LOGIN</a
+          >
+          <a href="#signup" class="w3-bar-item w3-button">SIGNUP</a>
+          <a href="#contact" class="w3-bar-item w3-button"
+            ><i class="fa fa-envelope"></i> CONTACT</a
+          >
         </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
-        style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
-            ×</a>
-        <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Saidit</a>
-        <a href="#current" onclick="w3_close()" class="w3-bar-item w3-button">TRENDING</a>
-        <a href="#login" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
-        <a href="#signup" onclick="w3_close()" class="w3-bar-item w3-button">SIGNUP</a>
-        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display:none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close ×</a
+      >
+      <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Saidit</a
+      >
+      <a href="#current" onclick="w3_close()" class="w3-bar-item w3-button"
+        >TRENDING</a
+      >
+      <a href="#login" onclick="w3_close()" class="w3-bar-item w3-button"
+        >LOGIN</a
+      >
+      <a href="#signup" onclick="w3_close()" class="w3-bar-item w3-button"
+        >SIGNUP</a
+      >
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"
+        >CONTACT</a
+      >
     </nav>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
+    <br />
     <div class="basic">
-        <img src="images/home.jpg" alt="homepage" class="center">
-        <div class="centered">
-            <a href="index.html">Ask the Saidit Community</a>
-        </div>
+      <img src="images/home.jpg" alt="homepage" class="center" />
+      <div class="centered">
+        <a href="index.html">Ask the Saidit Community</a>
+      </div>
     </div>
-</body>
-<footer>
-        <div class="social">
-          <i class="fa fa-facebook-official w3-hover-opacity"></i>
-          <i class="fa fa-instagram w3-hover-opacity"></i>
-          <i class="fa fa-snapchat w3-hover-opacity"></i>
-          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-          <i class="fa fa-twitter w3-hover-opacity"></i>
-          <i class="fa fa-linkedin w3-hover-opacity"></i>
-          <p>Powered by Hypertext Assassins</p>
-        </div>
-</footer>
+  </body>
+  <footer>
+    <div class="social">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p>Powered by Hypertext Assassins</p>
+    </div>
+  </footer>
 </html>
