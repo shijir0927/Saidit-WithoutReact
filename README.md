@@ -5,10 +5,15 @@ Saitit is a web-based Q&A app that allows people to ask anonymous questions and 
 ## Getting Started
 
 `1. git clone https://github.com/shijir0927/Saidit-WithoutReact.git `
+
 `2. cd Saidit-WithoutReact`
+
 `3. code .`
+
 `4. copy schema.sql and seeds.sql into your MySQL Workbench`
+
 `5. Change the password in connection.js`
+
 `6. node server.js`
 
 ### Prerequisites
