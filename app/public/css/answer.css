@@ -6,6 +6,11 @@
   border-radius: 10px;
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #b4b0b0;
+}
+
 /* .answer-button {
   height: 100px;
   width: 150px;

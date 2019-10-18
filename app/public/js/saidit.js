@@ -20,8 +20,8 @@ $.get("/api/all", function(data) {
       row.append(likeButton);
       row.append(dislikeButton);
 
-      row.append(`<h6 class = "likes">Like:</h6>` + data[i].likee);
-      row.append(`<h6 class = "likes">disLike:</h6>` + data[i].dislikee);
+      row.append(`<br><br><h6 class = "likes">Like:</h6>` + data[i].likee);
+      row.append(`<h6 class = "likes">Dislike:</h6>` + data[i].dislikee);
       console.log(data[i]);
       $("#question-area").prepend(row);
 
@@ -30,14 +30,14 @@ $.get("/api/all", function(data) {
         data[i].likee += 1;
 
         row.append("<h6>Like:</h6>" + data[i].likee);
-        row.append("<h6>disLike:</h6>" + data[i].dislikee);
+        row.append("<h6>Dislike:</h6>" + data[i].dislikee);
       });
 
       $("#dislike").on("click", function(event) {
         event.preventDefault();
         data[i].dislikee += 1;
         row.append("<h6>Like:</h6>" + data[i].likee);
-        row.append("<h6>disLike:</h6>" + data[i].dislikee);
+        row.append("<h6>Dislike:</h6>" + data[i].dislikee);
       });
 
       $("#answer").on("click", function(event) {
