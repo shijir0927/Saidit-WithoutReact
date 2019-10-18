@@ -1,0 +1,13 @@
+.question {
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* .answer-button {
+  height: 100px;
+  width: 150px;
+  background-color: blue;
+} */
