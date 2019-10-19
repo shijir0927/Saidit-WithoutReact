@@ -52,3 +52,32 @@ html {
   text-align: center;
   padding: 35px;
 }
+
+#big-box {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 200px;
+}
+
+footer {
+  margin-top: 280px;
+}
+
+#ask-footer {
+  margin-top: 50px;
+}
+/* 
+#submit-question {
+  height: 80px;
+  width: 150px;
+} */
+
+.container h1 {
+  font-size: 46px;
+  font-weight: 700;
+}
+
+header {
+  font-size: 18px;
+}
